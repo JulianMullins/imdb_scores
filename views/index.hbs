@@ -1,8 +1,15 @@
 
 <h1>Predict A Movie's IMDB Score</h1>
 <h2>Enter in the following information and hit go to see the resulting score.</h2>
+
 <form method="POST">
-	<input type="text" name="movTitle" placeholder="ex: The Dark Knight"></input>
-	<input type="text" name="movDuration" placeholder="ex: 186"></input>
-	<button type="submit">Predict -></button>
+  <div class="form-group">
+    <label for="movieTitle">Movie Title</label>
+    <input type="text" name="movTitle" class="form-control" id="movieTitle" placeholder="ex: The Dark Knight">
+  </div>
+  <div class="form-group">
+    <label for="movieDuration">Movie Duration (minutes)</label>
+    <input type="text" name="movDuration" class="form-control" id="movieDuration" placeholder="ex: 186">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
 </form>
