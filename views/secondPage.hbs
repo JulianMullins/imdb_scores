@@ -1,0 +1,61 @@
+<form method="POST">
+	<div class="form-group">
+		<label for="movieDuration">Movie genres (select all that apply)</label> <br />
+		<label class="checkbox-inline">
+			<input type="checkbox" name="animationFamily" value="Animation/Family"> Animation/Family
+		</label>
+		<label class="checkbox-inline">
+			<input type="checkbox" name="bioHistDoc" value="Biography/History/Documentary"> Biography/History/Documentary
+		</label>
+		<label class="checkbox-inline">
+			<input type="checkbox" name="comedy" value="Comedy"> Comedy
+		</label>
+		<label class="checkbox-inline">
+			<input type="checkbox" name="drama" value="Drama"> Drama
+		</label>
+		<label class="checkbox-inline">
+			<input type="checkbox" name="horrorThriller" value="Horror/Thriller"> Horror/Thriller
+		</label>
+		<label class="checkbox-inline">
+			<input type="checkbox" name="sciFiFantasy" value="Sci-Fi/Fantasy"> Sci-Fi/Fantasy
+		</label>
+	</div>
+
+	<div class="form-group">
+		<label>Content Rating</label> <br />
+		<label class="radio-inline">
+		<input type="radio" name="inlineRadioOptions" value="ga"> General Audience
+		</label>
+		<label class="radio-inline">
+		<input type="radio" name="inlineRadioOptions" value="adult"> Adult
+		</label>
+	</div>
+
+	<div class="form-group">
+		<label>Is the supporting actor an A-List actor?</label>
+		<div class="radio">
+			<label>
+			<input type="radio" name="optionsRadios" id="optionsRadios1" value="aListYes">
+			Yes
+			</label>
+		</div>
+		<div class="radio">
+			<label>
+			<input type="radio" name="optionsRadios" id="optionsRadios2" value="aListNo">
+			No
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+	<label for="userVotes">Number of user votes</label>
+		<input required="true" type="text" name="userVotes" class="form-control" placeholder="ex: 200000">
+	</div>
+
+	<div class="form-group">
+	<label for="criticReviews">Number of critic reviews</label>
+		<input required="true" type="text" name="criticReviews" class="form-control" placeholder="ex: 200000">
+	</div>
+
+	<button type="submit" class="btn btn-default">Submit</button>
+</form>

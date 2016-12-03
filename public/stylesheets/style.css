@@ -26,13 +26,14 @@ body {
 }
 
 h1 {
+	font-size: 26px;
 	font-weight: bold;
 	text-align: center;
 	margin: 0;
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 	margin: 0;
 	padding-bottom: 25px;
@@ -42,4 +43,22 @@ h2 {
 	width: 100vw;
 	position: absolute;
 	z-index: -1;
+}
+
+form {
+	min-width: 50vw;
+	max-width: 720px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.form-group {
+	width: 50vw;
+	max-width: 720px;
+}
+
+.checkbox-inline {
+	margin-left: 0 !important;
 }

@@ -1,15 +1,23 @@
 
 <h1>Predict A Movie's IMDB Score</h1>
-<h2>Enter in the following information and hit go to see the resulting score.</h2>
+<h2>Enter in the following information and hit submit to see the resulting score.</h2>
 
 <form method="POST">
-  <div class="form-group">
-    <label for="movieTitle">Movie Title</label>
-    <input type="text" name="movTitle" class="form-control" id="movieTitle" placeholder="ex: The Dark Knight">
-  </div>
-  <div class="form-group">
-    <label for="movieDuration">Movie Duration (minutes)</label>
-    <input type="text" name="movDuration" class="form-control" id="movieDuration" placeholder="ex: 186">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+	<div class="form-group">
+	<label for="movieTitle">Movie Title</label>
+		<input required="true" type="text" name="movTitle" class="form-control" id="movieTitle" placeholder="ex: The Dark Knight">
+	</div>
+	<div class="form-group">
+		<label for="movieDuration">Duration (minutes)</label>
+		<input required="true" type="text" name="movDuration" class="form-control" id="movieDuration" placeholder="ex: 186">
+	</div>
+	<div class="form-group">
+		<label for="movieBudget">Budget</label>
+		<input required="true" type="text" name="movBudget" class="form-control" id="movBudget" placeholder="ex: 2000000">
+	</div>
+	<div class="form-group">
+		<label for="movieBudget">Year</label>
+		<input required="true" type="text" name="movYear" class="form-control" id="movYear" placeholder="ex: 2015">
+	</div>
+	<button type="submit" class="btn btn-default">Next</button>
 </form>
