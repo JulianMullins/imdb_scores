@@ -21,7 +21,7 @@ var mlrResult = null;
 
 /* run the model */
 var mlr = function(duration, budget, year, animationFamily, bioHistDoc, comedy, drama, horrorThriller, sciFiFantasy, gaRating, actorOther, criticReviews, userVotes) {
-	var result = (0.004965505764*duration)+(-0.000000002803*budget)+(-0.024813755380*year)+
+	var result = 54.807100487900 + (0.004965505764*duration)+(-0.000000002803*budget)+(-0.024813755380*year)+
 				 (0.348602523272*animationFamily)+(0.294282475556*bioHistDoc)+(-0.097477068767*comedy)+
 				 (0.474187533070*drama)+(-0.224372472843*horrorThriller)+(-0.206355066016*sciFiFantasy)+(-0.201490337868*gaRating)+
 				 (0.131474996353*actorOther)+(0.002623420286*criticReviews)+(0.000002669015*userVotes);
