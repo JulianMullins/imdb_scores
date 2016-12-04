@@ -17,6 +17,7 @@ var criticReviews = null;
 var userVotes = null;
 
 var mlrResult = null;
+var mlrShort = null;
 
 
 /* run the model */
@@ -25,6 +26,21 @@ var mlr = function(duration, budget, year, animationFamily, bioHistDoc, comedy, 
 				 (0.348602523272*animationFamily)+(0.294282475556*bioHistDoc)+(-0.097477068767*comedy)+
 				 (0.474187533070*drama)+(-0.224372472843*horrorThriller)+(-0.206355066016*sciFiFantasy)+(-0.201490337868*gaRating)+
 				 (0.131474996353*actorOther)+(0.002623420286*criticReviews)+(0.000002669015*userVotes);
+	if(result >= 10) {
+		result = 9.99;
+	}
+
+	if(result <= 0) {
+		result = 0.01;
+	}
+
+	var stringed = result.toString();
+	stringed = stringed.split('.');
+	console.log("stringed: ", stringed);
+	var decimal1 = stringed[1];
+	decimal2 = decimal1.substring(0, 2);
+	mlrShort = stringed[0] + "." + decimal2;
+	console.log('mlrShort', mlrShort);
 	return result;
 }
 
@@ -104,7 +120,7 @@ router.post('/secondPage', function(req, res, next) {
 
 	res.render('scoreResult', {
 		title: title,
-		mlrResult: mlrResult
+		mlrShort: mlrShort
 	})
 })
 

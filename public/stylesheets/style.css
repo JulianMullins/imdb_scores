@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Park Lane';
+  src: url('../fonts/parklane.ttf'); /* IE9 Compat Modes */
+}
+
 html {
 	width: 100vw;
 	height: 100vh;
@@ -26,7 +31,8 @@ body {
 }
 
 h1 {
-	font-size: 26px;
+	font-family: "Park Lane", sans-serif;
+	font-size: 36px;
 	font-weight: bold;
 	text-align: center;
 	margin: 0;
@@ -37,6 +43,17 @@ h2 {
 	text-align: center;
 	margin: 0;
 	padding-bottom: 25px;
+}
+
+.movieTitle {
+	font-weight: bold;
+	font-size: 36px;
+	padding-bottom: 5px;
+}
+
+.imdbScore {
+	font-weight: bold;
+	font-size: 48px;
 }
 
 .backImage {
@@ -52,6 +69,22 @@ form {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.radio label {
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.radio-inline {
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.checkbox-inline {
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+label {
+	font-family: "Park Lane";
 }
 
 .form-group {
